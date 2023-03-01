@@ -10,7 +10,7 @@ function App() {
     { id: 'task_2', title: 'Code a To-do List', status: 1 }
   ])
   const [showIncomplete, setShowIncomplete] = useState(false)
-  const [newTask, setNewTask] = useState('New task')
+  const [newTask, setNewTask] = useState('')
   const handleSubmit = (e) => {
     e.preventDefault()
     if (newTask) {
